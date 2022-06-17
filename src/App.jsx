@@ -1,6 +1,7 @@
 import './App.css'
 import React, { Component } from "react";
 
+import ListaDeProdutos from './components/repeticao/ListaDeProdutos'
 import ListaAlunos from './components/repeticao/ListaAlunos';
 import Familia from './components/basicos/Familia';
 import Card from './components/layout/Card'
@@ -16,10 +17,11 @@ export default class App extends Component {
     <div className="App">
         <h1>Fundamentos React</h1>
         <div className="Cards">
+          <Card titulo="#07-Repetiçao Produtos" color="#004A65">
+            <ListaDeProdutos />
+          </Card>            
           <Card titulo="#06-Repetição" color="#FF4C65">
-            <ListaAlunos>
-
-            </ListaAlunos>
+            <ListaAlunos />
           </Card>          
           <Card titulo="#05-Componentes com Filhos" color="#00C8F8">
               <Familia sobrenome="Ferreira">
