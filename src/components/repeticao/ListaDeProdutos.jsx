@@ -18,12 +18,16 @@ export default function listaDeProdutos(props) {
     return (
       <div className="ListaDeProdutos">
         <table >
+          <thead>
           <tr>
             <th>Id</th>
             <th>Nome</th>
             <th>Preço</th>
           </tr>
+          </thead>
+          <tbody>
           { getLinhas()}
+          </tbody>
         </table>
       </div>
     )

@@ -4,7 +4,7 @@ import alunos from '../../data/alunos'
 export default function listalunos(props) {
   const lis =  alunos.map((aluno) => {
     return (
-      <li key={aluno.key}>
+      <li key={aluno.id}>
         {`${aluno.id}) ${aluno.nome} -> ${aluno.nota}` }
       </li>
     );

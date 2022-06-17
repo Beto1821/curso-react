@@ -1,6 +1,7 @@
 import './App.css'
 import React, { Component } from "react";
 
+
 import ListaDeProdutos from './components/repeticao/ListaDeProdutos'
 import ListaAlunos from './components/repeticao/ListaAlunos';
 import Familia from './components/basicos/Familia';
@@ -10,6 +11,8 @@ import FamiliaMembro from './components/basicos/FamiliaMembro';
 import ComParametro from './components/basicos/ComParametro'
 import Fragmento from './components/basicos/Fragmento'
 import Aleatorio from "./components/basicos/Aleatorio";
+import ParOuImpar from './components/condicional/ParOuImpar';
+import UsuarioInfo from './components/condicional/UsuarioInfor';
 
 export default class App extends Component {
   render (){
@@ -17,6 +20,12 @@ export default class App extends Component {
     <div className="App">
         <h1>Fundamentos React</h1>
         <div className="Cards">
+          <Card titulo="#08-Renderização Condicional" color="#004A65">
+            <ParOuImpar numero={2}/>
+            <UsuarioInfo usuario={{ nome: 'Fernando' }}/>
+            <UsuarioInfo usuario={{ email: 'Fer@nando.com' }}/>
+            <UsuarioInfo />            
+          </Card>      
           <Card titulo="#07-Repetiçao Produtos" color="#004A65">
             <ListaDeProdutos />
           </Card>            
