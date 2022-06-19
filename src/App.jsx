@@ -14,6 +14,8 @@ import Aleatorio from "./components/basicos/Aleatorio";
 import ParOuImpar from './components/condicional/ParOuImpar';
 import UsuarioInfo from './components/condicional/UsuarioInfor';
 import DiretaPai from './components/comunicacao/DiretaPai';
+import InDiretaPai from './components/comunicacao/InDiretaPai'
+import Input from './components/formulario/Input'
 
 export default class App extends Component {
   render (){
@@ -21,7 +23,13 @@ export default class App extends Component {
     <div className="App">
         <h1>Fundamentos React</h1>
         <div className="Cards">
-          <Card titulo="#09-Props" color="#982395">
+          <Card titulo="#11-Componenet Controlado" color="#E45F56">
+            <Input />
+          </Card>           
+          <Card titulo="#10-Comunicação Indireta" color="#8BAD39">
+            <InDiretaPai />
+          </Card>         
+          <Card titulo="#09-Comunicação Direta" color="#982395">
             <DiretaPai />
           </Card>            
           <Card titulo="#08-Renderização Condicional" color="#004A65">

@@ -1,7 +1,7 @@
 import React from 'react';
 import DiretoFilho from './DiretaFilho';
 
-export default function DiretaPai (props) {
+export default function DiretaPai () {
   return (
     <div>
         <DiretoFilho nome="Gui" idade={17} nerd={true}/>
