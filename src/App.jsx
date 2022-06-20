@@ -16,6 +16,7 @@ import UsuarioInfo from './components/condicional/UsuarioInfor';
 import DiretaPai from './components/comunicacao/DiretaPai';
 import InDiretaPai from './components/comunicacao/InDiretaPai'
 import Input from './components/formulario/Input'
+import Contador from './components/contador/Contador';
 
 export default class App extends Component {
   render (){
@@ -23,6 +24,9 @@ export default class App extends Component {
     <div className="App">
         <h1>Fundamentos React</h1>
         <div className="Cards">
+          <Card titulo="#12-Componenet Controlado" color="#E424242">
+            <Contador numeroInicial={10}/>
+          </Card>              
           <Card titulo="#11-Componenet Controlado" color="#E45F56">
             <Input />
           </Card>           
